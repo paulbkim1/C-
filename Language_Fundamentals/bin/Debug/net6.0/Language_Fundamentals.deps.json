@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Language_Fundamentals/1.0.0": {
+        "runtime": {
+          "Language_Fundamentals.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Language_Fundamentals/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
