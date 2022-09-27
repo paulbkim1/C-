@@ -1,0 +1,15 @@
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/bin/Debug/net6.0/Fundamentals_One
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/bin/Debug/net6.0/Fundamentals_One.deps.json
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/bin/Debug/net6.0/Fundamentals_One.runtimeconfig.json
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/bin/Debug/net6.0/Fundamentals_One.dll
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/bin/Debug/net6.0/Fundamentals_One.pdb
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/obj/Debug/net6.0/Fundamentals_One.csproj.AssemblyReference.cache
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/obj/Debug/net6.0/Fundamentals_One.GeneratedMSBuildEditorConfig.editorconfig
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/obj/Debug/net6.0/Fundamentals_One.AssemblyInfoInputs.cache
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/obj/Debug/net6.0/Fundamentals_One.AssemblyInfo.cs
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/obj/Debug/net6.0/Fundamentals_One.csproj.CoreCompileInputs.cache
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/obj/Debug/net6.0/Fundamentals_One.dll
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/obj/Debug/net6.0/refint/Fundamentals_One.dll
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/obj/Debug/net6.0/Fundamentals_One.pdb
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/obj/Debug/net6.0/Fundamentals_One.genruntimeconfig.cache
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Fundamentals_One/obj/Debug/net6.0/ref/Fundamentals_One.dll
