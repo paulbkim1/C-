@@ -1,0 +1,28 @@
+body {
+    padding: 1vw 6vw;
+}
+
+#header {
+    width: auto;
+    text-align: center;
+    font-size: 1vw;
+}
+
+
+#title {
+    width: auto;
+    text-align: center;
+    font-size: 1.6vw;
+}
+
+#content {
+    width: auto;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30vw;
+}

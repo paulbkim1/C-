@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "KeVEX/GLoHrxv4SNGEqpOTPLQFouih6Scn45MKHGlnk=",
+  "Source": "survey",
+  "BasePath": "_content/survey",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "survey/wwwroot",
+      "Source": "survey",
+      "ContentRoot": "/Users/paulkim/Desktop/C#/mvc/survey/wwwroot/",
+      "BasePath": "_content/survey",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/paulkim/Desktop/C#/mvc/survey/wwwroot/css/style.css",
+      "SourceId": "survey",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/paulkim/Desktop/C#/mvc/survey/wwwroot/",
+      "BasePath": "_content/survey",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/style.css"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/bin/Debug/net6.0/Puzzles
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/bin/Debug/net6.0/Puzzles.deps.json
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/bin/Debug/net6.0/Puzzles.runtimeconfig.json
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/bin/Debug/net6.0/Puzzles.dll
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/bin/Debug/net6.0/Puzzles.pdb
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/obj/Debug/net6.0/Puzzles.csproj.AssemblyReference.cache
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/obj/Debug/net6.0/Puzzles.GeneratedMSBuildEditorConfig.editorconfig
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/obj/Debug/net6.0/Puzzles.AssemblyInfoInputs.cache
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/obj/Debug/net6.0/Puzzles.AssemblyInfo.cs
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/obj/Debug/net6.0/Puzzles.csproj.CoreCompileInputs.cache
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/obj/Debug/net6.0/Puzzles.dll
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/obj/Debug/net6.0/refint/Puzzles.dll
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/obj/Debug/net6.0/Puzzles.pdb
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/obj/Debug/net6.0/Puzzles.genruntimeconfig.cache
+/Users/paulkim/Desktop/C#/Language_Fundamentals/Puzzles/obj/Debug/net6.0/ref/Puzzles.dll

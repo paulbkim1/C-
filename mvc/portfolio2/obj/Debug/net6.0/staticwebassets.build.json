@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "O3BiCh1H80FU5lA3F/mswfjsMbks6+1sO0OaBI9EFHQ=",
+  "Source": "portfolio2",
+  "BasePath": "_content/portfolio2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "portfolio2/wwwroot",
+      "Source": "portfolio2",
+      "ContentRoot": "/Users/paulkim/Desktop/C#/mvc/portfolio2/wwwroot/",
+      "BasePath": "_content/portfolio2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/paulkim/Desktop/C#/mvc/portfolio2/wwwroot/css/style.css",
+      "SourceId": "portfolio2",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/paulkim/Desktop/C#/mvc/portfolio2/wwwroot/",
+      "BasePath": "_content/portfolio2",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/style.css"
+    }
+  ]
+}

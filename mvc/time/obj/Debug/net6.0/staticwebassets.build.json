@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "wOmh+wPYosSgGiIZ4bMBWLY87h5VVlDAMlnafgnjR+0=",
+  "Source": "time",
+  "BasePath": "_content/time",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "time/wwwroot",
+      "Source": "time",
+      "ContentRoot": "/Users/paulkim/Desktop/C#/mvc/time/wwwroot/",
+      "BasePath": "_content/time",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/paulkim/Desktop/C#/mvc/time/wwwroot/css/style.css",
+      "SourceId": "time",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/paulkim/Desktop/C#/mvc/time/wwwroot/",
+      "BasePath": "_content/time",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/style.css"
+    }
+  ]
+}
