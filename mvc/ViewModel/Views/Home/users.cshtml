@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@model List<string>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,5 +9,9 @@
 </head>
 <body>
     <h1>Here are some Users!</h1>
+    @foreach (string i in Model)
+    {
+        <h2>@i</h2>
+    }
 </body>
 </html>

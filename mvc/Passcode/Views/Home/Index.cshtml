@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model string
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h1>Random passcode #@Context.Session.GetInt32("Count")</h1>
+<h2>@Model</h2>
+<h3>
+    <form action="/generate" method="post">
+        <button>Generate</button>
+    </form>
+</h3>

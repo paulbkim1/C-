@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Survey
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <form asp-action="Data" asp-controller="Home" method="post">
+            <div class="row">
+                <label asp-for="Name"></label>
+                <span asp-validation-for="Name"></span>
+                <input asp-for="Name"/>
+            </div>
+            <div class="row">
+                <label asp-for="Location"></label>
+                <span asp-validation-for="Location"></span>
+                <select asp-for="Location">
+                    <option value="San Jose">San Jose</option>
+                    <option value="Burbank">Burbank</option>
+                    <option value="Costa Mesa">Costa Mesa</option>
+                    <option value="Online">Online</option>
+                </select>
+            </div>
+            <div class="row">
+                <label asp-for="Language"></label>
+                <span asp-validation-for="Language"></span>
+                <select asp-for="Language">
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                </select>
+            </div>
+            <div class="row">
+                <label asp-for="Comment"></label>
+                <span asp-validation-for="Comment"></span>
+                <input asp-for="Comment"/>
+            </div>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
