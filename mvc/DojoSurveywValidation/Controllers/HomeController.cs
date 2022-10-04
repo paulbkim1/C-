@@ -27,8 +27,15 @@ public class HomeController : Controller
             HttpContext.Session.SetString("Name", newinfo.Name);
             HttpContext.Session.SetString("Location", newinfo.Location);
             HttpContext.Session.SetString("Language", newinfo.Language);
-            HttpContext.Session.SetString("Comment", newinfo.Comment);
-            return RedirectToAction("/submit");
+            if (newinfo.Comment == null)
+            {
+                HttpContext.Session.SetString("Comment", "");
+            }
+            else
+            {
+                HttpContext.Session.SetString("Comment", newinfo.Comment);
+            }
+            return Redirect("/submit");
         }
         else
         {
@@ -36,15 +43,9 @@ public class HomeController : Controller
         }
     }
 
-    [HttpGet("/submit")]
+    [HttpGet("submit")]
     public IActionResult SurveyData()
     {
-        string? name = HttpContext.Session.GetString("name");
-
-        if (name == null)
-        {
-            HttpContext.Session.SetString("name","");
-        }
         return View("SurveyData");
     }
 
