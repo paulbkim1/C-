@@ -4,6 +4,21 @@ using Microsoft.AspNetCore.Identity;
 
 public class HomeController : Controller
 {
+    private int? uid
+    {
+        get
+        {
+            return HttpContext.Session.GetInt32("UserId");
+        }
+    }
+
+    private bool loggedIn
+    {
+        get
+        {
+            return uid != null;
+        }
+    }
     private MyContext db;
     public HomeController(MyContext context)
     {
@@ -78,6 +93,10 @@ public class HomeController : Controller
     [HttpGet("/success")]
     public IActionResult Success()
     {
+        if(!loggedIn)
+        {
+            return RedirectToAction("Index");
+        }
         return View("Success");
     }
 
