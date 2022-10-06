@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+@model Food
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit @Model.Dish</h1>
+    <a href="/">Home</a> |
+    <a href="/dishes/new">Add a Dish</a>
+    <form asp-action="Update" asp-controller="Foods" asp-route-dishId="@Model.DishId" method="POST">
+        <label asp-for="Name"></label>
+        <span asp-validation-for="Name"></span>
+        <input asp-for="Name" value="@Model.Name">
+
+        <label asp-for="Dish"></label>
+        <span asp-validation-for="Dish"></span>
+        <input asp-for="Dish" value="@Model.Dish">
+
+        <label asp-for="Calories"></label>
+        <span asp-validation-for="Calories"></span>
+        <input asp-for="Calories" value="@Model.Calories">
+
+        <label asp-for="Tastiness"></label>
+        <span asp-validation-for="Tastiness"></span>
+        <select asp-for="Tastiness" value="@Model.Tastiness">
+            <option value="0">Please Select an option</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label asp-for="Description"></label>
+        <span asp-validation-for="Description"></span>
+        <input asp-for="Description" value="@Model.Description">
+
+        <button>Edit Dish</button>
+    </form>
+
+</body>
+</html>

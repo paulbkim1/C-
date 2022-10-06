@@ -1,0 +1,7 @@
+@if (Context.Session.GetInt32("UserId") != null)
+{
+    <form asp-action= "Logout" asp-controller= "Home" method="POST">
+        <button>Logout</button>
+    </form>
+}
+<h1>Success!</h1>

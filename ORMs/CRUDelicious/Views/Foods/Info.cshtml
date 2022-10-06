@@ -1,0 +1,25 @@
+@model Food
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>@Model.Dish </h1>
+    <a href="/">Home</a> |
+    <a href="/dishes/new">Add a Dish</a>
+    <h3>@Model.Dish by @Model.Name</h3>
+    <p>@Model.Description</p>
+    <p>Calories: @Model.Calories</p>
+    <p>Tastiness: @Model.Tastiness</p>
+    <form asp-controller="Foods" asp-action="Delete" asp-route-deleteDishId=@Model.DishId method="POST">
+        <button>Delete</button>
+    </form>
+    <form asp-controller="Foods" asp-action="Edit" asp-route-dishId=@Model.DishId method="GET">
+        <button>Edit</button>
+    </form>
+</body>
+</html>

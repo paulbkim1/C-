@@ -1,0 +1,20 @@
+﻿@model List<Food>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to CRUDelicious</h1>
+    <a href="/">Home</a> |
+    <a href="/dishes/new">Add a Dish</a>
+    <h3>Check out some recent dishes</h3>
+    @foreach (Food i in Model) {
+        <p><a asp-controller="Foods" asp-action="View" asp-route-oneDishId="@i.DishId">@i.Dish</a> by @i.Name</p>
+    }
+
+</body>
+</html>
