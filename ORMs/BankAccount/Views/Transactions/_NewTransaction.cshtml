@@ -1,0 +1,10 @@
+@model Transaction
+
+<div>
+    <form asp-action="Transaction" asp-controller="Transactions" method="POST">
+        <label asp-for="Amount"></label>
+        <span asp-validation-for="Amount"></span>
+        <input asp-for="Amount">
+        <button>Submit</button>
+    </form>
+</div>

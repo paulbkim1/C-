@@ -1,0 +1,10 @@
+@* @model List<Product> *@
+
+<h1><a href="">Products</a> | <a href="">Categories</a></h1>
+<h2>New Product</h2>
+<partial name="_AddProduct"></partial>
+<h2>All Products</h2>
+@* @foreach(Product i in Model)
+{
+    <p>@i.Name</p>
+} *@

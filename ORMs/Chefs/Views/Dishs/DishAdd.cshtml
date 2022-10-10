@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+@model Dish
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="/">Chefs</a>
+        <a href="/dishes">Dishes</a>
+        <a href="/chefs/new">Add a Chef</a>
+        <a href="/dishes/new">Add a Dish</a>
+    </div>
+    <div>Add a dish</div>
+    <div>
+        <form asp-action="NewDish" asp-controller="Dishs" method="POST">
+            <label asp-for="Food"></label>
+            <span asp-validation-for="Food"></span>
+            <input asp-for="Food">
+
+            <label asp-for="Calories"></label>
+            <span asp-validation-for="Calories"></span>
+            <input asp-for="Calories">
+
+            <label asp-for="ChefName"></label>
+            <span asp-validation-for="ChefName"></span>
+            <select asp-for="ChefName">
+                <option value="">Please Select an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label asp-for="Tastiness"></label>
+            <span asp-validation-for="Tastiness"></span>
+            <select asp-for="Tastiness">
+                <option value="0">Please Select an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <button>Add Dish</button>
+        </form>
+    </div>
+</body>
+</html>
