@@ -13,6 +13,7 @@ public class ProductCategoryAssociation
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
 
+    [Display(Name = "")]
     public int ProductId { get; set; }
     public Product? Product { get; set; }
     public int CategoryId { get; set; }

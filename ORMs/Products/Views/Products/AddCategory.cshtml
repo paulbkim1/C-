@@ -1,0 +1,14 @@
+@model Product
+
+<h1><a href="/">Products</a> | <a href="/categories">Categories</a></h1>
+<h2>@ViewBag.ProductName.Name</h2>
+<h5>Categories</h5>
+@foreach ( ProductCategoryAssociation i in Model.ProductAssocations)
+{
+    <p>@i.Category.Name</p>
+}
+<h5>Add Category</h5>
+@{
+    ProductCategoryAssociation AddProductCategory = new ProductCategoryAssociation();
+}
+<partial name="_AddProductCategory" model="@AddProductCategory"></partial>

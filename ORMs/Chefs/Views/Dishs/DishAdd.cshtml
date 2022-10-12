@@ -25,15 +25,14 @@
             <span asp-validation-for="Calories"></span>
             <input asp-for="Calories">
 
-            <label asp-for="ChefName"></label>
-            <span asp-validation-for="ChefName"></span>
-            <select asp-for="ChefName">
+            <label asp-for="ChefId"></label>
+            <span asp-validation-for="ChefId"></span>
+            <select asp-for="ChefId">
                 <option value="">Please Select an option</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                @foreach (Chef i in ViewBag.ChefNames)
+                {
+                    <option value="@i.ChefId">@i.FirstName @i.LastName</option>
+                }
             </select>
 
             <label asp-for="Tastiness"></label>

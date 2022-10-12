@@ -1,0 +1,12 @@
+@model Wedding
+<h1>Welcome @Context.Session.GetString("UserName")!</h1>
+<a href="/weddings">Home</a>
+<a href="/weddings/new">Plan a Wedding</a>
+<a href="/logout">Logout</a>
+<h1>@Model.WedderOne & @Model.WedderTwo's Wedding</h1>
+<h3>Date: @Model.Date</h3>
+<h5>Guests:</h5>
+@foreach (UserWeddingInvitation i in Model.WeddingInvitations)
+{
+    <p>@i.User.FirstName @i.User.LastName</p>
+}

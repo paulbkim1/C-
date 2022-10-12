@@ -1,0 +1,14 @@
+@model ProductCategoryAssociation
+<form asp-action="AddCategoryProduct" asp-controller="Categorys" asp-route-categoryId="@ViewBag.CategoryName.CategoryId" method="POST">
+    <label asp-for="ProductId"></label>
+    <span asp-validation-for="ProductId"></span>
+    <select asp-for="ProductId">
+        <option>Please select a product</option>
+        @foreach (Product product in ViewBag.ProductList)
+        {
+        <option value="@product.ProductId">@product.Name</option>
+        }
+    </select>
+
+    <button>Add</button>
+</form>

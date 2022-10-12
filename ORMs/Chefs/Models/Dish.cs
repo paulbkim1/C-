@@ -20,11 +20,6 @@ public class Dish
     public int Calories { get; set; }
 
 
-    [Required(ErrorMessage = "Chef's name is required")]
-    [Display(Name = "Chef's Name")]
-    public string ChefName { get; set; }
-
-
     [Required(ErrorMessage = "Tastiness is required")]
     [Display(Name = "Tastiness")]
     [Range(1,5, ErrorMessage ="Tastiness must be between 1-5")]
@@ -35,6 +30,8 @@ public class Dish
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
 
+    [Required(ErrorMessage = "Chef's name is required")]
+    [Display(Name ="Chef's Name")]
     public int ChefId { get; set; }
     public Chef? UserChef { get; set; }
 }

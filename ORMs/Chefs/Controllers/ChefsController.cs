@@ -15,7 +15,8 @@ public class ChefsController : Controller
     [HttpGet("/")]
     public IActionResult ChefList()
     {
-        List<Dish> AllChefs = db.Dishs.Include( i => i.UserChef).ToList();
+        List<Chef> AllChefs = db.Chefs.Include( c => c.ChefDishs).ToList();
+        
         return View("ChefList", AllChefs);
     }
 

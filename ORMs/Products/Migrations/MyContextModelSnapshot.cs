@@ -32,7 +32,7 @@ namespace Products.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("ProductId")
+                    b.Property<int?>("ProductId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -102,13 +102,9 @@ namespace Products.Migrations
 
             modelBuilder.Entity("Products.Models.Category", b =>
                 {
-                    b.HasOne("Products.Models.Product", "Item")
+                    b.HasOne("Products.Models.Product", null)
                         .WithMany("ProductCategorys")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Item");
+                        .HasForeignKey("ProductId");
                 });
 
             modelBuilder.Entity("Products.Models.ProductCategoryAssociation", b =>

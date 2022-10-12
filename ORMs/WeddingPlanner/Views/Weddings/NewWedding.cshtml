@@ -1,0 +1,25 @@
+@model Wedding
+<h1>Welcome @Context.Session.GetString("UserName")!</h1>
+<a href="/weddings">Home</a>
+<a href="/weddings/new">Plan a Wedding</a>
+<a href="/logout">Logout</a>
+<h1>Plan a Wedding</h1>
+<form asp-action="PlanWedding" asp-controller="Weddings" method="POST" >
+        <label asp-for="WedderOne"></label>
+        <span asp-validation-for="WedderOne"></span>
+        <input asp-for="WedderOne">
+
+        <label asp-for="WedderTwo"></label>
+        <span asp-validation-for="WedderTwo"></span>
+        <input asp-for="WedderTwo">
+
+        <label asp-for="Date"></label>
+        <span asp-validation-for="Date"></span>
+        <input asp-for="Date">
+
+        <label asp-for="Address"></label>
+        <span asp-validation-for="Address"></span>
+        <input asp-for="Address">
+
+        <button>Create</button>
+</form>

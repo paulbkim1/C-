@@ -17,9 +17,6 @@ public class Category
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
 
-    public int ProductId { get; set; }
-    public Product? Item { get; set; }
-
     public List<ProductCategoryAssociation> CategoryAssociations { get; set; } = new List<ProductCategoryAssociation>();
 
 }

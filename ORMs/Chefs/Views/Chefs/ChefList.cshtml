@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-@model List<Dish>
+@model List<Chef>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,11 +22,11 @@
                 <th>Age</th>
                 <th># of Dishes</th>
             </tr>
-            @foreach(Dish i in Model){
+            @foreach(Chef chef in Model){
             <tr>
-                <td>@i.UserChef.FirstName @i.UserChef.LastName</td>
-                <td>@(@DateTime.Today.Year - @i.UserChef.DoB.Year)</td>
-                <td></td>
+                <td>@chef.FirstName @chef.LastName</td>
+                <td>@(@DateTime.Today.Year - @chef.DoB.Year)</td>
+                <td>@chef.ChefDishs.Count</td>
             </tr>}
         </table>
     </div>

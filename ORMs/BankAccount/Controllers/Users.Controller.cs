@@ -58,7 +58,7 @@ public class UsersController : Controller
         HttpContext.Session.SetInt32("UserId", NewUser.UserId);
         HttpContext.Session.SetString("UserName", NewUser.FirstName + " " + NewUser.LastName);
 
-        return RedirectToAction("Account", "Transactions");
+        return Redirect($"/accounts/{NewUser.UserId}");
     }
 
 
@@ -89,6 +89,6 @@ public class UsersController : Controller
 
         HttpContext.Session.SetInt32("UserId", CurrentUser.UserId);
         HttpContext.Session.SetString("UserName", CurrentUser.FirstName + " " + CurrentUser.LastName);
-        return RedirectToAction("Account", "Transactions");
+        return Redirect($"/accounts/{CurrentUser.UserId}");
     }
 }

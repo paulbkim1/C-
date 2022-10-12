@@ -59,10 +59,6 @@ namespace Chefs.Migrations
                     b.Property<int>("ChefId")
                         .HasColumnType("int");
 
-                    b.Property<string>("ChefName")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 

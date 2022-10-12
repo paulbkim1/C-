@@ -1,10 +1,13 @@
-@* @model List<Product> *@
+@model List<Product>
 
-<h1><a href="">Products</a> | <a href="">Categories</a></h1>
+<h1><a href="/">Products</a> | <a href="/categories">Categories</a></h1>
 <h2>New Product</h2>
-<partial name="_AddProduct"></partial>
+@{
+    Product NewProduct = new Product();
+}
+<partial name="_AddProduct" model="@NewProduct"></partial>
 <h2>All Products</h2>
-@* @foreach(Product i in Model)
+@foreach(Product i in Model)
 {
-    <p>@i.Name</p>
-} *@
+    <p><a href="/products/@i.ProductId">@i.Name</a></p>
+}

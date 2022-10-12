@@ -23,6 +23,8 @@ public class DishsController : Controller
     [HttpGet("/dishes/new")]
     public IActionResult DishAdd()
     {
+        List<Chef> ChefName = db.Chefs.ToList();
+        ViewBag.ChefNames = ChefName;
         return View("DishAdd");
     }
 
@@ -34,7 +36,6 @@ public class DishsController : Controller
         {
             return DishAdd();
         }
-        NewDish.ChefId = 1;
         db.Dishs.Add(NewDish);
         db.SaveChanges();
         return RedirectToAction("DishList");

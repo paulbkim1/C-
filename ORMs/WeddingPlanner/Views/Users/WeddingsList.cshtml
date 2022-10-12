@@ -1,0 +1,35 @@
+@model List<Wedding>
+<h1>Welcome @Context.Session.GetString("UserName")!</h1>
+<a href="/weddings">Home</a>
+<a href="/weddings/new">Plan a Wedding</a>
+<a href="/logout">Logout</a>
+<table>
+    <tr>
+        <th>Weding of</th>
+        <th>Date</th>
+        <th>Guest Count</th>
+        <th>Action</th>
+    </tr>
+    @foreach (Wedding i in Model)
+    {
+        <tr>
+            <td><a href="/weddings/@i.WeddingId">@i.WedderOne & @i.WedderTwo</a></td>
+            <td>@i.Date</td>
+            <td>@i.WeddingInvitations.Count</td>
+            <td>
+                @{bool alreadyRSVPed = i.WeddingInvitations.Any( i => i.UserId == Context.Session.GetInt32("UserId"));}
+                <form asp-action="RSVP" asp-controller="Users" asp-route-weddingId="@i.WeddingId" >
+                    <button>
+                        @if (alreadyRSVPed)
+                        {
+                            <span>UN-RSVP</span>
+                        }
+                        else
+                        {
+                            <span>RSVP</span>
+                        }
+                    </button>
+                </form></td>
+        </tr>
+    }
+</table>

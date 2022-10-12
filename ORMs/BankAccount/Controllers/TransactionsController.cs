@@ -29,17 +29,24 @@ public class TransactionsController : Controller
     }
 
 
-    [HttpGet("/accounts/")]
-    public IActionResult Account()
+    [HttpGet("/accounts/{id}")]
+    public IActionResult Account(int id)
     {
         if(!loggedIn)
         {
             return RedirectToAction("Homepage", "Users");
         }
-        decimal Balance = db.Transactions.Sum(i => i.Amount);
+
+        if (id != uid)
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Homepage", "Users");
+        }
+
+        decimal Balance = db.Transactions.Where(i => i.UserId == id).Sum(i => i.Amount);
         HttpContext.Session.SetInt32("UserBalance", (int)Balance);
 
-        List<Transaction> AllTransactions = db.Transactions.Include( i => i.Customer).ToList();
+        List<Transaction> AllTransactions = db.Transactions.Include( i => i.Customer).Where( c => c.UserId == id).ToList();
         return View("Account", AllTransactions);
     }
 
@@ -47,17 +54,16 @@ public class TransactionsController : Controller
     [HttpPost("/transaction")]
     public IActionResult Transaction(Transaction NewTransaction)
     {
-        decimal Balance = db.Transactions.Sum(i => i.Amount);
-        if (Balance + NewTransaction.Amount < 0)
+        if (HttpContext.Session.GetInt32("UserBalance") + NewTransaction.Amount < 0)
         {
             ModelState.AddModelError("Amount", "Not enough funds");
-            return RedirectToAction("Account");
+            return Account((int)HttpContext.Session.GetInt32("UserId"));
         }
 
         NewTransaction.UserId = (int)uid;
         db.Transactions.Add(NewTransaction);
         db.SaveChanges();
-        return RedirectToAction("Account");
+        return Redirect($"/accounts/{NewTransaction.UserId}");
     }
 
 }
